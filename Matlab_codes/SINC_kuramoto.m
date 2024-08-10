@@ -39,7 +39,7 @@ function results = SINC_kuramoto(x,x_dot,r,epsilon,Gamma)
                 if(norm(Lambda_hat_updated-Lambda_hat)<epsilon || iter == 100)
                     Lambda_hat = Lambda_hat_updated;
                     Iteration_number(i,network_iteration) = iter;
-      
+                    
                     
                     % Store the values
                     Lambda_each_node((network_iteration-1)*N+i,:) = Lambda_hat';
